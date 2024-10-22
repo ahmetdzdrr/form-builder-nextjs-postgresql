@@ -1,10 +1,16 @@
 # Form Builder - Next.js & PostgreSQL
 
-![WhatsApp Image 2024-10-18 at 23 03 04 (1)](https://github.com/user-attachments/assets/22a5639b-b1b4-4d82-a359-a40a99db2bf0)
+<div align="center">
+  
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+  ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+</div>
+
+---
+
+![WhatsApp Image 2024-10-18 at 23 03 04 (1)](https://github.com/user-attachments/assets/22a5639b-b1b4-4d82-a359-a40a99db2bf0)
 
 A form-building application built with **Next.js**, **PostgreSQL**, and **Tailwind CSS** that allows users to create, save, and manage forms. The project is designed to be deployed on **Vercel** and supports form creation, response storage, and viewing through a PostgreSQL backend.
 
