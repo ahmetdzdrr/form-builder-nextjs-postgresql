@@ -1,6 +1,7 @@
-import { JsonForms } from '@/configs/schema';
-import { db } from '@/configs/index';
+// api/save-form/route.js
+
 import { NextResponse } from 'next/server';
+import { pool } from "../connect-db/route"; // Adjusted path to access the pool
 
 export async function POST(request) {
     try {
@@ -13,10 +14,15 @@ export async function POST(request) {
             );
         }
 
-        const survey = await db.insert(JsonForms).values({ jsonform }).returning();
+        const client = await pool.connect();
+        const result = await client.query(
+            'INSERT INTO Forms (jsonform) VALUES ($1) RETURNING *',
+            [jsonform]
+        );
+        client.release();
 
         return NextResponse.json(
-            { success: true, survey },
+            { success: true, survey: result.rows[0] }, // Return the newly created survey
             { status: 201 }
         );
 

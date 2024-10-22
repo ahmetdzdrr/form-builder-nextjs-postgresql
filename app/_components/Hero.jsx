@@ -23,7 +23,7 @@ function Hero() {
             <Image src='/logo.png' width={200} height={200} alt="Logo" />
           </div>
           <h1 className="text-3xl font-extrabold sm:text-5xl">
-            Anket Oluşturmak Artık
+            Form Oluşturmak Artık
             <strong className="font-extrabold text-red-700 sm:block"> Daha Kolay. </strong>
           </h1>
 

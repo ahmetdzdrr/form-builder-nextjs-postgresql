@@ -131,7 +131,7 @@ const CreateSurvey = () => {
                 {!previewMode && (
                     <div className="mb-4">
                         <label className="h-5 flex mb-4 items-center">
-                            <span className='font-semibold'>Anket Başlığı:</span>
+                            <span className='font-semibold'>Form Başlığı:</span>
                             <Info
                                 className="ml-2 cursor-pointer"
                                 onMouseEnter={() => setShowInfo(true)}

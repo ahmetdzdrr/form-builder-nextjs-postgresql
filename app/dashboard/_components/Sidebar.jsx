@@ -15,7 +15,7 @@ function Sidebar({ isSidebarOpen, toggleSidebar }) {
       id: 2,
       name: 'Form Cevaplarım',
       icon: MessageSquare,
-      path: '/dashboard/responses',
+      path: '/responses',
     },
   ];
 

@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { LogOut, Pencil, Share, Trash } from 'lucide-react';
-import { db } from '@/configs/index';
-import { JsonForms } from '@/configs/schema';
 import { useRouter } from 'next/navigation';
 import ProtectedRoute from '../_components/ProtectedRoute';
 
@@ -24,7 +22,11 @@ function Dashboard() {
 
   const fetchForms = async () => {
     try {
-      const forms = await db.select().from(JsonForms);
+      const response = await fetch('/api/connect-db');
+      if (!response.ok) {
+        throw new Error('Error fetching forms');
+      }
+      const forms = await response.json();
       const formsWithTitles = forms.map(processForm);
       setForms(formsWithTitles);
     } catch (error) {
@@ -110,7 +112,6 @@ function Dashboard() {
           <Button onClick={handleLogout} className='bg-red-500 hover:bg-red-700 gap-1'>Çıkış Yap<LogOut width={20} /></Button>
         </div>
       </div>
-
 
       {forms.length === 0 ? (
         <div className='flex flex-col sm:flex-row items-center'>
