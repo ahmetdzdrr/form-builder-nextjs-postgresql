@@ -14,7 +14,6 @@ A form-building application built with **Next.js**, **PostgreSQL**, and **Tailwi
 9. [Deployment](#deployment)
 10. [Contributing](#contributing)
 
----
 
 ## Features
 - **Form Creation**: Admins can create custom forms with various input types.
@@ -23,7 +22,6 @@ A form-building application built with **Next.js**, **PostgreSQL**, and **Tailwi
 - **Tailwind CSS**: For fast and responsive UI styling.
 - **Next.js**: Full-stack capabilities with server-side rendering.
 
----
 
 ## Tech Stack
 - **Next.js** - Framework for server-side rendering and frontend development.
@@ -31,7 +29,6 @@ A form-building application built with **Next.js**, **PostgreSQL**, and **Tailwi
 - **Tailwind CSS** - Utility-first CSS framework.
 - **Vercel** - Hosting platform for easy deployment.
 
----
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
@@ -40,7 +37,6 @@ Before you begin, ensure you have the following installed:
 - **PostgreSQL** (v12+)
 - **Vercel CLI** (if deploying on Vercel)
 
----
 
 ## Installation
 
@@ -59,11 +55,6 @@ Before you begin, ensure you have the following installed:
    - Create a new PostgreSQL database (e.g., `formdb`).
    - Create the required tables as specified in the [Database Schema](#database-schema).
 
----
-
-Here’s the updated `.env.local` information for your **README.md** file:
-
----
 
 ## Configuration
 
@@ -84,7 +75,6 @@ Replace:
 2. **Tailwind CSS**:
    Tailwind is already configured. If you need to customize styles, you can modify the `tailwind.config.js` file.
 
----
 
 ## Running the Project
 
@@ -96,7 +86,6 @@ npm run dev
 
 Visit the app at [http://localhost:3000](http://localhost:3000).
 
----
 
 ## API Endpoints
 
@@ -105,7 +94,6 @@ Visit the app at [http://localhost:3000](http://localhost:3000).
 - **GET /api/forms/[id]**: Fetches a single form by ID.
 - **POST /api/responses**: Submits a form response.
 
----
 
 ## Database Schema
 
@@ -129,7 +117,6 @@ Visit the app at [http://localhost:3000](http://localhost:3000).
   );
   ```
 
----
 
 ## Deployment
 
@@ -149,13 +136,11 @@ Visit the app at [http://localhost:3000](http://localhost:3000).
    - Use a managed PostgreSQL service like **Supabase** or **Heroku**.
    - Set the `DATABASE_URL` in the Vercel dashboard for environment variables.
 
----
 
 ## Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit a pull request.
 
----
 
 ## License
 This project is licensed under the MIT License.
